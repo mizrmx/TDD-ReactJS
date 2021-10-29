@@ -13,43 +13,38 @@ h1
   text-align: center; 
   font-family: 'Courier New', Courier, monospace;
   font-size: 35px;
+} 
+
+.logo-simpsons
+{
+  max-width: 30%;
+  height: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 45px;
 }
 
-/* .App {
-  text-align: center;
+.simpsons-center
+{
+  width: 50%;
+  height: 320px;
+  background-color: rgba(255,255, 255, 0.7);
+  margin: auto;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.simpsons-quote
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.simpsons-character
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

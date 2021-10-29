@@ -12,16 +12,34 @@ export const MainPage = () => {
         .then(data => setQuotes(data)),
     []
   )
-
+  
   return (
-    <>
-    <h1>Simpsons quotes</h1>
-    
-    <ul>
-      {quotes.map(({quote}) => (
-        <li key={quote}>{quote}</li>
-      ))}
-    </ul>
-    </>
+    <div>
+      <img class="logo-simpsons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/The_logo_simpsons_yellow.svg/1200px-The_logo_simpsons_yellow.svg.png"></img>
+
+      <div class="simpsons-center">
+        <div>
+          <ul>
+            {quotes.map(({ quote }) => (
+              <p class="simpsons-quote" key={quote}> "{quote}" </p>
+            ))}
+          </ul>
+
+          <ul>
+            {quotes.map(({ character }) => (
+              <p class="simpsons-character" key={character}>{character} </p>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            {quotes.map(({ image, character }) => (
+              <img key={character} src={image} alt={character}></img>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
   )
 }
