@@ -35,7 +35,7 @@ export const MainPage = () => {
         <div>
           <ul>
             {quotes.map(({ image, character }) => (
-              <img key={character} src={image} alt={character}></img>
+              <img class="simpsons-img" key={character} src={image} alt={character}></img>
             ))}
           </ul>
         </div>
